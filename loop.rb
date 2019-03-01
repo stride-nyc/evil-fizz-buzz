@@ -1,3 +1,5 @@
+require 'prime'
+
 def do_fizz_buzz
   sequence = *(1..100)
 end
@@ -28,6 +30,18 @@ def fizzbuzz4(num)
   else
     num
   end
+end
+
+def wizzify_array(array)
+  array.map do |element|
+    wizzify_element(element)
+  end
+end
+
+def wizzify_element(element)
+  return element.concat('Wizz') if['Fizz', 'Buzz', 'FizzBuzz'].include?(element)
+  return 'Wizz' if Prime.prime? element
+  element
 end
 
 def invoke_fizzbuzz4(arr)
