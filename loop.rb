@@ -21,3 +21,7 @@ def replace_with_buzz(numbers)
     end
   end
 end
+
+def format_output(data)
+  data.join(', ')
+end
