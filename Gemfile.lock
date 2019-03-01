@@ -22,6 +22,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler
   rspec
   rspec_junit_formatter
 
