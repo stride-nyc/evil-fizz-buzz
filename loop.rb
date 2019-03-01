@@ -11,3 +11,17 @@ def do_fizz_buzz_2(numbers)
     end
   end
 end
+
+def fizzbuzz4(num)
+  if num % 3 == 0 && num % 5 == 0
+    'FizzBuzz'
+  else
+    num
+  end
+end
+
+def do_fizz_buzz_4(arr)
+  arr.map.with_index do |num, idx|
+    fizzbuzz4(idx + 1)
+  end
+end
