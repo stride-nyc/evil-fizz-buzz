@@ -1,4 +1,4 @@
-require_relative '../output.rb'
+require_relative '../loop.rb'
 
 describe 'output' do
   context 'when given a non-empty array' do
