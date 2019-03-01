@@ -6,3 +6,11 @@ describe 'loop' do
     expect(do_fizz_buzz).to eq(expected)
   end
 end
+
+describe 'fizz buzz' do
+  it 'replaces every number divisible by 3 with "fizz"' do
+    array = *(1..6)
+    expect(do_fizz_buzz_2(array)).to eq([1, 2, "fizz", 4, 5, "fizz"])
+  end
+end
+
