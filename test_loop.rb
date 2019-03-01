@@ -7,10 +7,17 @@ describe 'loop' do
   end
 end
 
-describe 'fizz buzz' do
+describe 'replace with fizz' do
   it 'replaces every number divisible by 3 with "fizz"' do
     array = *(1..6)
-    expect(do_fizz_buzz_2(array)).to eq([1, 2, "fizz", 4, 5, "fizz"])
+    expect(replace_with_fizz(array)).to eq([1, 2, "fizz", 4, 5, "fizz"])
+  end
+end
+
+describe 'replace with buzz' do
+  it 'replaces every number divisible by 5 with "buzz"' do
+    array = *(1..6)
+    expect(replace_with_buzz(array)).to eq([1, 2, 3, 4, "buzz", 6])
   end
 end
 
@@ -29,10 +36,10 @@ describe 'fizzbuzz4' do
   end
 end
 
-describe 'do_fizz_buzz_4' do
+describe 'invoke_fizzbuzz4' do
   it 'should accept an array and replace all numbers divisible by 3 and 5' do
     arr = (1..30).to_a
-    expect(do_fizz_buzz_4(arr)).to eq(
+    expect(invoke_fizzbuzz4(arr)).to eq(
       [1,2,3,4,5,6,7,8,9,10,11,12,13,14,'FizzBuzz',16,17,18,19,20,21,22,23,24,25,26,27,28,29, 'FizzBuzz']
     )
   end
